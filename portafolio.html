@@ -2,27 +2,54 @@
 <html>
 <head>
 <title Programmer Name></title>
+<style>
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    color: black;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4{
+    color: black;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    
+</style>
 </head>
 <body>
 
 <div>  
-<h1>Vania Muñoz</h1>
-<img src="fotoperfil.png" alt="fotoperfil" style="width: 200px; height: 200px;">
+    <h1>Vania Muñoz</h1>
+    <img src="fotoperfil.png" alt="fotoperfil" style="width: 200px; height: 200px;">
 </div>  
 
 <div>
-<img src="git.png" alt="git hub " style="width: 40px; height: 40px;">
-<a href="https://github.com/VaniaMunoz"> Mi GitHub</a>
+    <img src="git.png" alt="git hub " style="width: 40px; height: 40px;">
+    <a href="https://github.com/VaniaMunoz"> Mi GitHub</a>
 
-<img src="link.png" alt="linkedin" style="width: 40px; height: 40px;"> 
-<a href="https://cl.linkedin.com/">Mi Linkedin</a> 
+    <img src="link.png" alt="linkedin" style="width: 40px; height: 40px;"> 
+    <a href="https://cl.linkedin.com/">Mi Linkedin</a> 
 
-<img src="gmail.png" alt="Correo" style="width: 40px; height: 40px;">
-<a href="https://mail.google.com/mail/u/0/#inbox">Mi Correo</a>
+    <img src="gmail.png" alt="Correo" style="width: 40px; height: 40px;">
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">Mi Correo</a>
 </div>
 
 <div>
-<h1>TECHNOLOGIES</h1>
+<h2>TECHNOLOGIES</h2>
 <table>
     <table border="1">
         <thead>
@@ -60,28 +87,34 @@
 </div>
 
 <div>
-<h2>Social Snakes</h2>
-
-<img src="youtube.png" alt="Youtube" style="width: 60px; height: 40px;">
-<h4>Social Media App made in Python <a href="https://www.youtube.com/">Youtube</a> </h4>
-<h2>Contac Me</h2>
+    <h3>Social Snakes</h3>
+    <img src="youtube.png" alt="Youtube" style="width: 60px; height: 40px;">
+    <h4>Social Media App made in Python <a href="https://www.youtube.com/">Youtube</a> </h4>
+    <h2>Contac Me</h2>
 </div>
 
-<div>
-    <label> Name: </label>
-    <input type="text" name="name" >
-    <label>Email: </label>
-    <input type="text" name="name" >
-</div>
+<form action="/process" method="post">
+    <div>
+        <label> Name: </label>
+        <input type="text" name="name" placeholder="Your name..." >
+    </div>
 
-<br>
-<div>
-<label>Message: </label>
-    <textarea name="comment" cols="20" rows="3"></textarea>
-<br>
-<input type="submit" value="Send Message" >
-</div>
-<br>
+    <div>
+        <label>Email: </label>
+        <input type="text" name="email" placeholder="Your email...">
+    </div>
+    
+    <div>
+        <input type="checkbox" name="offers" id="offers" checked>
+        <label for="offers">Me gustaria recibir correos con ofertas </label>
+    </div>
+
+    <div>
+        <textarea name="comment" cols="35" rows="3"></textarea>
+        <input type="submit" value="Send Message" >
+    </div>
+</form>
+
 </body>
 
 </html>
